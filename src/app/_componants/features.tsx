@@ -41,7 +41,7 @@ const blogs = [
   },
 ];
 
-export default function Blog() {
+export default function Features() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {

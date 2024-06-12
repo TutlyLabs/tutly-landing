@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div id="about" className="bg-primary text-gray-300 px-32 pb-32">
+    <div id="about" className="bg-black p-32 pt-8 rounded-t-3xl text-gray-300">
       <div className="flex justify-between">
         <div className="flex flex-col gap-8 w-2/5">
           {/* <Image
@@ -15,6 +15,7 @@ export default function Footer() {
             width={200}
             height={100}
           /> */}
+          <h1 className="text-5xl font-bold">LOGO</h1>
           <p>
             Crest is an AI-powered supply chain software that provides companies
             tools for demand forecasting, inventory planning and more. This

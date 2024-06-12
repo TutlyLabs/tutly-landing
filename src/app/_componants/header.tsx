@@ -30,7 +30,7 @@ const links = [
 export default function Header() {
   const pathname = usePathname();
   return (
-    <div className="flex justify-between items-center px-32 py-2 bg-primary-900 text-white">
+    <div className="flex justify-between items-center px-32 py-2 bg-black text-white">
       <div>{/* <Image src="" alt="logo" width={140} height={100} /> */}</div>
       <div className="flex items-center gap-7">
         {links.map((link) => (

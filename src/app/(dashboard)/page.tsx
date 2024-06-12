@@ -1,7 +1,10 @@
+import Features from "../_componants/features";
 
 
 export default function Home() {
   return (
-    <div>Page</div>
+    <div>
+      <Features/>
+    </div>
   );
 }
