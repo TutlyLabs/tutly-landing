@@ -1,38 +1,36 @@
 "use client"
-import Image from "next/image"
-import Link from "next/link"
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 const links = [
-    {
-        name: "Product",
-        path: "/"
-    },
-    {
-        name: "Pricing",
-        path: "/pricing"
-    },
-    {
-        name: "Industry",
-        path: "/industry"
-    },
-    {
-        name: "Customer Stories",
-        path: "#reviews"
-    },
-    {
-        name: "About",
-        path: "#about"
-    },
-    {
-        name: "Blog",
-        path: "#blog"
-    },
+  {
+      name: "Product",
+      path: "/"
+  },
+  {
+      name: "Pricing",
+      path: "/pricing"
+  },
+  {
+      name: "Industry",
+      path: "/industry"
+  },
+  {
+      name: "Customer Stories",
+      path: "#reviews"
+  },
+  {
+      name: "About",
+      path: "#about"
+  },
+  {
+      name: "Blog",
+      path: "#blog"
+  },
 ]
 export default function Header() {
-    const pathname = usePathname();
-    return(
-        <div id="top" className="scroll-smooth flex justify-between items-center px-32 py-2 bg-primary text-white">
+  const pathname = usePathname();
+  return (
+    <div className="flex justify-between items-center px-32 py-2 bg-primary-900 text-white">
             <div>
                 {/* <Image src="" alt="logo" width={140} height={100} /> */}
             </div>
@@ -48,5 +46,5 @@ export default function Header() {
                 <button className="px-6 py-3 font-semibold rounded-full bg-gradient-to-br from-pink-400 to-violet-400">Talk to Us</button>
             </div>
         </div>
-    )
+  );
 }
