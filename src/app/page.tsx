@@ -1,8 +1,10 @@
-import Image from "next/image";
+import Header from "@/componants/header";
 import "./globals.css";
 
 export default function Home() {
   return (
-    <div>Page</div>
+    <div>
+      <Header/>
+    </div>
   );
 }

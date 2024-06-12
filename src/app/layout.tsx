@@ -1,4 +1,3 @@
-import Header from "@/componants/header";
 import "./globals.css";
 export const metadata = {
   title: "Tutly",
