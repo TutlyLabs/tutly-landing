@@ -3,41 +3,37 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 const links = [
   {
-    name: "Product",
+    name: "Home",
     path: "/",
   },
   {
-    name: "Pricing",
-    path: "/pricing",
+    name: "Events",
+    path: "/events"
   },
   {
-    name: "Industry",
-    path: "/industry",
+    name: "Features",
+    path: "#features"
   },
   {
-    name: "Customer Stories",
+    name: "Reviews",
     path: "#reviews",
   },
   {
     name: "About",
     path: "#about",
   },
-  {
-    name: "Blog",
-    path: "#blog",
-  },
 ];
 export default function Header() {
   const pathname = usePathname();
   return (
-    <div className="flex justify-between items-center px-32 py-2 bg-black text-white">
-      <div>{/* <Image src="" alt="logo" width={140} height={100} /> */}</div>
+    <div className="flex justify-between items-center px-32 py-3 bg-black text-white">
+      <div className="text-xl font-black">{/* <Image src="" alt="logo" width={140} height={100} /> */}TUTLY</div>
       <div className="flex items-center gap-7">
         {links.map((link) => (
           <Link
-            className={`${
-              pathname === link.path &&
-              "inline-block text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500"
+            className={`hover:text-blue-500 ${
+              pathname===link.path &&
+              "text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-blue-500 font-bold"
             }`}
             href={link.path}
             key={link.path}
@@ -47,10 +43,10 @@ export default function Header() {
         ))}
       </div>
       <div className="flex items-center gap-10">
-        <button className="text-pink-300">Login</button>
-        <button className="px-6 py-3 font-semibold rounded-full bg-gradient-to-br from-pink-400 to-violet-400">
-          Talk to Us
-        </button>
+        <Link href="https://learn.tutly.in/" className="hover:text-blue-500">Login</Link>
+        <Link href={"mailto:sales@tutly.in"} target="_blank" className="px-4 py-2 font-semibold rounded-full bg-gradient-to-br from-violet-600 to-blue-400">
+          Contact Us
+        </Link>
       </div>
     </div>
   );

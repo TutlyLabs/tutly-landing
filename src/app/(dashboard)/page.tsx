@@ -1,10 +1,14 @@
-import Features from "../_componants/features";
+import Courses from "../_componants/courses";
+import PageFlip from "../_componants/features/features";
+import Home from "../_componants/home";
 
 
-export default function Home() {
+export default function Page() {
   return (
     <div>
-      <Features/>
+      <Home/>
+      <Courses/>
+      <PageFlip/>
     </div>
   );
 }

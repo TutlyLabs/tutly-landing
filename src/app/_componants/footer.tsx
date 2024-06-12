@@ -1,7 +1,7 @@
-import Image from "next/image";
+
 import { FaTwitter, FaInstagram } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Footer() {
@@ -9,59 +9,45 @@ export default function Footer() {
     <div id="about" className="bg-black p-32 pt-8 rounded-t-3xl text-gray-300">
       <div className="flex justify-between">
         <div className="flex flex-col gap-8 w-2/5">
-          {/* <Image
-            src=""
-            alt="logo"
-            width={200}
-            height={100}
-          /> */}
-          <h1 className="text-5xl font-bold">LOGO</h1>
-          <p>
-            Crest is an AI-powered supply chain software that provides companies
-            tools for demand forecasting, inventory planning and more. This
-            helps them have the right amount of stock, optimise space and fulfil
-            every order.
+          <h1 className="text-5xl font-black">TUTLY</h1>
+          <p className="">
+            Empowering students with state-of-the-art tools and resources for
+            academic success. Transform your educational journey with personalized support,
+            interactive content, and a vibrant community. Discover the future of
+            education, tailored for you.
           </p>
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="font-semibold text-white">Explore</h1>
-          <h1>Product</h1>
+          <Link href={'/events'}>Events</Link>
           <h1>Pricing</h1>
-          <h1>Customer Stories</h1>
-          <h1>Career</h1>
+          <h1>Reviews</h1>
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="font-semibold text-white">Learn</h1>
+          <h1>Courses</h1>
           <h1>About us</h1>
-          <h1>Blog</h1>
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="font-semibold text-white">Contact Crest</h1>
-          <h1>sales@getcrest.ai</h1>
+          <h1>sales@tutly.in</h1>
           <div>
-            <h1>Registered Office:</h1>
-            <h1>1507, Incubex, 11th cross road,</h1>
-            <h1>19th Main Road, Bengaluru,</h1>
-            <h1>India. 560102</h1>
-          </div>
-          <div>
-            <h1>Corporate Office:</h1>
-            <h1>291, All Time Space, 4th Floor,</h1>
-            <h1>15th A Cross, Sector - 6,</h1>
-            <h1>HSR Layout, Bengaluru,</h1>
-            <h1>India. 560102</h1>
+            <h1>Office:</h1>
+            <h1>Pragathi Nagar,</h1>
+            <h1>Bachupally, Hyderabad</h1>
+            <h1>India. 500090</h1>
           </div>
           <div className="flex gap-4 text-lg">
-            <Link href="www.google.com">
+            <Link href="#">
               <FaTwitter />
             </Link>
-            <Link href="www.google.com">
-              <FaFacebookF />
+            <Link href="#">
+              <FaTelegram />
             </Link>
-            <Link href="www.google.com">
+            <Link href="#">
               <FaInstagram />
             </Link>
-            <Link href="www.google.com">
+            <Link href="#">
               <FaLinkedinIn />
             </Link>
           </div>
@@ -79,7 +65,7 @@ export default function Footer() {
             <h1>CIN: U72900KA2022PTC163144</h1>
           </div>
         </div>
-        <Link href="#top">
+        <Link href="#">
           {/* <Image
             src=""
             alt="logo"

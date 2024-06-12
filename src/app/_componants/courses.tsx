@@ -6,42 +6,42 @@ const blogs = [
   {
     image:
       "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/6527d12579fe9fb6cfc0c8eb_RPA%20BLOG%20THUMBNAIL.png",
-    heading: "Impact of RPA (Robotic Process Automation) in Supply Chain ",
+    heading: "HTML ",
     date: "Oct 12, 2023",
   },
   {
     image:
       "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/64ec7b71e9332bfe4b920ba3_thumbnail%20QSR%20(1).png",
-    heading: "Creating an Impact with Inventory Planning: The QSR Edition",
+    heading: "CSS",
     date: "Aug 28, 2023",
   },
   {
     image:
       "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/64ccbab82ea1c2946724d96f_blog-thumbnail.jpg",
-    heading: "The Ultimate Recipe for Inventory Success",
+    heading: "Javascript",
     date: "Aug 4, 2023",
   },
   {
     image:
       "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/64a2748fdf4cb57114ca9e3d_HOLIDAY%20SEASON%20-p-1080.png",
-    heading: "Stocking Strategies for Festive Season Sales",
+    heading: "React",
     date: "Jul 3, 2023",
   },
   {
     image:
       "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/643d785ce4b16a9a9979095a_Blog%20Build%20VS%20Buy%20-p-1080.png",
-    heading: "To Build or Buy: The Endless Inventory Planning Dilemma",
+    heading: "NodeJS",
     date: "Apr 17, 2023",
   },
   {
     image:
       "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/642688163009ef784ee99686_blog%20image%20-p-1080.png",
-    heading: "Why your ERP is not your Inventory Planning Tool",
+    heading: "Backend",
     date: "Mar 31, 2023",
   },
 ];
 
-export default function Features() {
+export default function Courses() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -62,13 +62,9 @@ export default function Features() {
         <div className="flex flex-col w-1/3 ps-32 justify-between">
           <div className="flex flex-col gap-6">
             <div>
-              <h1 className="text-4xl font-bold">Delivered:</h1>
-              <h1 className="text-4xl font-bold">The Crest blog</h1>
+              <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-pink-500  to-violet-500">Explore Our Curated Courses</h1>
+              <p className="font-semibold pt-2">Unlock a World of Knowledge and Skills!</p>
             </div>
-            <p>
-              Insights from years of working in various supply-chain roles (and
-              an itch to write). We hope you find these posts interesting!
-            </p>
             <div className="flex gap-4">
               <Image
                 src="https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/639b3e775b326d5122ea3ebb_slider-arrow.svg"
@@ -89,22 +85,22 @@ export default function Features() {
             </div>
           </div>
           <div>
-            <button className="p-2 px-4 rounded-full border-2 font-semibold border-pink-300 inline-block text-transparent bg-clip-text hover:bg-clip-border hover:border-pink-400 hover:text-white bg-gradient-to-r via-pink-500 from-[#F48D88] to-violet-500">
-              View all blogs
+            <button className="p-2 px-4 rounded-full border-2 font-semibold border-violet-400 inline-block text-transparent bg-clip-text hover:bg-clip-border hover:border-none hover:text-white bg-gradient-to-r from-violet-600  to-blue-400">
+              View all courses
             </button>
           </div>
         </div>
         <div className="overflow-hidden w-2/3">
           <div
             className="flex gap-10 transition-transform duration-700"
-            style={{ transform: `translateX(-${currentIndex * 435}px)` }}
+            style={{ transform: `translateX(-${currentIndex * 335}px)` }}
           >
             {blogs.map((blog, index) => (
               <div
                 key={index}
-                className="bg-violet-100 w-[400px] rounded-2xl p-6 flex-shrink-0 group cursor-pointer"
+                className="bg-gradient-to-br from-blue-200  to-violet-300 w-[300px] rounded-2xl p-4 flex-shrink-0 group cursor-pointer"
               >
-                <div className="rounded-2xl h-[240px] overflow-hidden">
+                <div className="rounded-2xl h-[180px] overflow-hidden">
                   <Image
                     src={blog.image}
                     alt="image"
@@ -113,18 +109,9 @@ export default function Features() {
                     height={300}
                   />
                 </div>
-                <h1 className="text-xl font-semibold py-4 mb-12">
+                <h1 className="text-lg font-bold pt-4 text-center">
                   {blog.heading}
                 </h1>
-                <div className="flex justify-between">
-                  <h1>{blog.date}</h1>
-                  <Image
-                    src="https://cdn.prod.website-files.com/639b3e775b326dcf7cea3e70/639b3e775b326d07edea3eca_Vector.svg"
-                    alt="arrow"
-                    width={15}
-                    height={15}
-                  />
-                </div>
               </div>
             ))}
           </div>
