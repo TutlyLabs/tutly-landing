@@ -5,39 +5,28 @@ import Image from "next/image";
 const blogs = [
   {
     image:
-      "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/6527d12579fe9fb6cfc0c8eb_RPA%20BLOG%20THUMBNAIL.png",
+      "/html.svg",
     heading: "HTML ",
-    date: "Oct 12, 2023",
   },
   {
-    image:
-      "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/64ec7b71e9332bfe4b920ba3_thumbnail%20QSR%20(1).png",
+    image:"/css.svg",
     heading: "CSS",
-    date: "Aug 28, 2023",
   },
   {
-    image:
-      "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/64ccbab82ea1c2946724d96f_blog-thumbnail.jpg",
+    image:"/js.svg",
     heading: "Javascript",
-    date: "Aug 4, 2023",
   },
   {
-    image:
-      "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/64a2748fdf4cb57114ca9e3d_HOLIDAY%20SEASON%20-p-1080.png",
+    image:"/react.svg",
     heading: "React",
-    date: "Jul 3, 2023",
   },
   {
-    image:
-      "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/643d785ce4b16a9a9979095a_Blog%20Build%20VS%20Buy%20-p-1080.png",
-    heading: "NodeJS",
-    date: "Apr 17, 2023",
+    image:"/nextjs.svg",
+    heading: "NextJS",
   },
   {
-    image:
-      "https://cdn.prod.website-files.com/639b3e775b326d0848ea3e74/642688163009ef784ee99686_blog%20image%20-p-1080.png",
+    image:"/backend.svg",
     heading: "Backend",
-    date: "Mar 31, 2023",
   },
 ];
 
@@ -104,7 +93,7 @@ export default function Courses() {
                   <Image
                     src={blog.image}
                     alt="image"
-                    className="rounded-2xl w-full h-full group-hover:scale-110 duration-1000"
+                    className="rounded-2xl w-full h-full group-hover:scale-110 duration-1000 bg-white"
                     width={300}
                     height={300}
                   />

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div id="about" className="bg-black p-32 pt-8 rounded-t-3xl text-gray-300">
+    <div id="about" className="bg-black px-32 py-8 rounded-t-3xl text-gray-300">
       <div className="flex justify-between">
         <div className="flex flex-col gap-8 w-2/5">
           <h1 className="text-5xl font-black">TUTLY</h1>
@@ -53,16 +53,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between items-end pt-14">
         <div>
           <div className="flex gap-4 py-4">
-            <h1>Copyright 2024 Crest</h1>
+            <h1>Copyright 2024 Tutly</h1>
             <h1>Terms of Service</h1>
             <h1>Privacy Policy</h1>
-          </div>
-          <div>
-            <h1>Conifer Innovations Private Limited</h1>
-            <h1>CIN: U72900KA2022PTC163144</h1>
           </div>
         </div>
         <Link href="#">
