@@ -5,6 +5,7 @@ const nextConfig = {
       {
         source: "/",
         destination: "/under-maintenance",
+        permanent: false,
       },
     ];
   },
