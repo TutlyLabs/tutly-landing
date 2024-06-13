@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div id="about" className="bg-black px-32 py-8 rounded-t-3xl text-gray-300">
-      <div className="flex justify-between">
-        <div className="flex flex-col gap-8 w-2/5">
-          <h1 className="text-5xl font-black">TUTLY</h1>
-          <p className="">
+    <div id="about" className="bg-black px-2 max-sm:text-xs md:px-32 pt-4 sm:py-8 sm:rounded-t-3xl text-gray-300">
+      <div className="flex flex-wrap justify-between">
+        <div className="flex flex-col gap-8 w-2/5 max-sm:w-full max-sm:pb-6">
+          <h1 className="text-3xl sm:text-5xl font-black">TUTLY</h1>
+          <p className="max-sm:hidden">
             Empowering students with state-of-the-art tools and resources for
             academic success. Transform your educational journey with personalized support,
             interactive content, and a vibrant community. Discover the future of
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-end pt-14">
+      <div className="flex justify-between items-end sm:pt-14">
         <div>
           <div className="flex gap-4 py-4">
             <h1>Copyright 2024 Tutly</h1>

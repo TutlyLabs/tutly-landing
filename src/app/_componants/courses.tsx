@@ -46,9 +46,9 @@ export default function Courses() {
   };
 
   return (
-    <div id="blog" className="py-20">
-      <div className="flex gap-10">
-        <div className="flex flex-col w-1/3 ps-32 justify-between">
+    <div id="blog" className="py-4 md:py-20">
+      <div className="flex max-md:flex-wrap gap-10">
+        <div className="flex flex-col w-1/3 px-2 max-md:w-full md:ps-32 justify-between">
           <div className="flex flex-col gap-6">
             <div>
               <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-pink-500  to-violet-500">Explore Our Curated Courses</h1>
@@ -74,12 +74,12 @@ export default function Courses() {
             </div>
           </div>
           <div>
-            <button className="p-2 px-4 rounded-full border-2 font-semibold border-violet-400 inline-block text-transparent bg-clip-text hover:bg-clip-border hover:border-none hover:text-white bg-gradient-to-r from-violet-600  to-blue-400">
+            <button className="p-2 px-4 max-md:mt-4 max-sm:p-1 max-sm:px-2 rounded-full border-2 font-semibold border-violet-400 inline-block text-transparent bg-clip-text hover:bg-clip-border hover:text-white bg-gradient-to-r from-violet-600  to-blue-400">
               View all courses
             </button>
           </div>
         </div>
-        <div className="overflow-hidden w-2/3">
+        <div className="overflow-hidden w-2/3 max-md:w-full max-md:ml-4">
           <div
             className="flex gap-10 transition-transform duration-700"
             style={{ transform: `translateX(-${currentIndex * 335}px)` }}

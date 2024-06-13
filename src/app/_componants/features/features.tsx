@@ -20,7 +20,7 @@ const PageFlip = () => {
   };
 
   return (
-    <div id="features" className="mb-20">
+    <div id="features" className="mb-20 max-sm:hidden">
       <div className="perspective h-[500px] flex justify-end ">
         {/* 1-left */}
         <div className="text-xl sm:text-3xl md:text-5xl flex justify-center items-center w-1/2 px-2 sm:px-5 font-bold bg-gradient-to-r from-blue-500 to-violet-800 rounded-l-3xl">
