@@ -29,7 +29,7 @@ export default function Footer() {
           <h1>About us</h1>
         </div>
         <div className="flex flex-col gap-4">
-          <h1 className="font-semibold text-white">Contact Crest</h1>
+          <h1 className="font-semibold text-white">Contact Us</h1>
           <h1>sales@tutly.in</h1>
           <div>
             <h1>Office:</h1>
