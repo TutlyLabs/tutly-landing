@@ -10,7 +10,7 @@ export default function Page() {
       <Home/>
       <Courses/>
       <PageFlip/>
-      <Testimonials/>
+{/*       <Testimonials/> */}
     </div>
   );
 }
