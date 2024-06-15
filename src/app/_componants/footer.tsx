@@ -1,5 +1,6 @@
 
-import { FaTwitter, FaInstagram } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { RiTwitterXLine } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
 import Link from "next/link";
@@ -42,7 +43,7 @@ export default function Footer() {
               <FaLinkedinIn />
             </Link>
             <Link href="https://x.com/tutlydotin" target="_blank">
-              <FaTwitter />
+              <RiTwitterXLine />
             </Link>
             <Link href="https://t.me/tutlydotin" target="_blank">
               <FaTelegram />
