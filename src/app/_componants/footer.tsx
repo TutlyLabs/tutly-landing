@@ -38,17 +38,17 @@ export default function Footer() {
             <h1>India. 500090</h1>
           </div>
           <div className="flex gap-4 text-lg">
-            <Link href="#">
+            <Link href="https://www.linkedin.com/company/tutly" target="_blank">
+              <FaLinkedinIn />
+            </Link>
+            <Link href="https://x.com/tutlydotin" target="_blank">
               <FaTwitter />
             </Link>
-            <Link href="#">
+            <Link href="https://t.me/tutlydotin" target="_blank">
               <FaTelegram />
             </Link>
-            <Link href="#">
+            <Link href="https://www.instagram.com/tutlydotin" target="_blank">
               <FaInstagram />
-            </Link>
-            <Link href="#">
-              <FaLinkedinIn />
             </Link>
           </div>
         </div>
