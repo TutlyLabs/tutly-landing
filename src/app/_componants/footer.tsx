@@ -58,8 +58,8 @@ export default function Footer() {
         <div>
           <div className="flex gap-4 py-4">
             <h1>Copyright 2024 Tutly</h1>
-            <h1>Terms of Service</h1>
-            <h1>Privacy Policy</h1>
+            <Link href="/terms" className="underline">Terms and conditions</Link>
+            <Link href="/privacy" className="underline">Privacy Policy</Link>
           </div>
         </div>
         <Link href="#">
