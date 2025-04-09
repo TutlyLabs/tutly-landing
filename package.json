@@ -1,5 +1,5 @@
 {
-  "name": "landing",
+  "name": "tutly.in",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-icons": "^5.2.1",
+    "@radix-ui/react-accordion": "^1.2.3",
+    "@tabler/icons-react": "^3.30.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.4.7",
+    "lucide-react": "^0.475.0",
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-scroll": "^1.9.3",
+    "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-scroll": "^1.8.10",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
